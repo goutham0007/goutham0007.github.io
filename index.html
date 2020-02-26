@@ -1,53 +1,85 @@
-<html>
+<html lang="en">
 <head>
-<title>
-Main website
-</title>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body{
- background-image:url("main.jpg");
- background-size:cover;
- background-repeat:no-repeat;
+* {
+  box-sizing: border-box;
 }
 
-div{
- background-color:lightgrey;
- width:100%;
- border-collapse:collapse;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
-#go{
-border-collapse:collapse;
-width:100%;
-background-color:lightblue;
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
 }
-#go td:hover{background-color:darkgrey;}
-#go td:active{background-color:orange;}
-#go td{
-border:4px dotted tomato;
-text-align:left;
-padding:3px;
-margin:auto;
+nav {
+  float: left;
+  width: 30%;
+  height: 300px;
+  background: #ccc;
+  padding: 20px;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px;
+}
+ section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
 }
 </style>
-
 </head>
 <body>
 <center>
+ <header>
+  <h2>biodata</h2>
+</header>
 
-<table id="go">
-<tr>
-<td><font size="5"><a href="aboutme.html" target="goutham">About me</a></font></td>
-<td><font size="5"><a href="about html.html" target="goutham">About html</a></font></td>
-<td><font size="5"><a href="qualif.html" target="goutham">qualifations</a></font></td>
-<td><font size="5"><a href="course.html" target="goutham">course cerdits</a></font></td>
-<td><font size="5"><a href="location.html" target="goutham">locations</a></font></td>
-
-</tr>
-</table>
-<br/><br/>
+ <section>
+  <nav>
+   <ul>
+<li><font size="5"><a href="aboutme.html" target="goutham">About me</a></font></li>
+<li><font size="5"><a href="about html.html" target="goutham">About html</a></font></li>
+<li><font size="5"><a href="qualif.html" target="goutham">qualifations</a></font></li>
+<li><font size="5"><a href="course.html" target="goutham">course cerdits</a></font></li>
+<li><font size="5"><a href="location.html" target="goutham">locations</a></font></li>
+   </ul>
+    </nav>
+ </section>
+  <br/><br/>
 <div>
 <iframe src="aboutme.html" height="600" width="100%" name="goutham"></iframe>
 </div>
+ <footer>
+  <p>Footer</p>
+</footer>
 <br>
 <br>
 </center>
